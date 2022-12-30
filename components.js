@@ -330,7 +330,7 @@ class SearchBar extends HTMLElement {
       <style>
 
       .fave-list {
-        min-height: 100vh;   
+        min-height: 125vh;   
       }
 
         .fave-image {

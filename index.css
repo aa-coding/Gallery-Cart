@@ -25,6 +25,12 @@ body {
     font-family: 'NeueMontreal-book';
     background-color: black;
     min-height: 100vh;
+   
+}
+
+/* centers website on wide screens */
+.container {
+    margin: auto;
     max-width: 1200px;  
 }
 
