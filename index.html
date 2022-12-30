@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery-Cart Project</title>
+    <link rel="stylesheet"  href="index.css" />
+    <script defer type="module" src="/Gallery-Cart/components.js"></script>
+    <script defer type="module" src="/Gallery-Cart/main.js"></script>
+
+</head>
+    <body>
+        <aa-header></aa-header>
+      <!--'home' and 'cart' templates are appended to wrapper -->
+        <div class="wrapper"></div> 
+        
+        <template class="home" >
+            <div class="content">
+                <p class="page-desc">
+                Search <a href="https://www.metmuseum.org/">The Metropolitan Musem of Art</a>! Display 
+                (maximum) 10 random images from a selection of Met pieces tagged with your
+                search term. Add your favourites to your cart. *Note: no session
+                storage, so reloading the page will clear your cart. 
+                </p>
+                <aa-search-bar class="search-component"></aa-search-bar>
+                <div class="img-div"></div>
+            </div>   
+        </template>
+        
+        <template class="cart">
+            <div class="content">
+                <aa-cart class="aa-cart"></aa-cart>
+            </div>    
+        </template>
+
+        <template class="fave-item">
+            <div class="fave-list-item"> 
+                <div class='fave-list-image'>
+                    <img class="fave-image"/>
+                    <button><img src="/Gallery-Cart//assets/x-square.svg" class="delete-icon"></button>
+                </div> 
+                <p></p>   
+            </div>
+        </template>
+
+        <footer>
+            <p class="footer-text">&#169; aa-coding </p>
+            <p class='footer-api-info'>More info about The Met API: <a href="https://metmuseum.github.io/">metmuseum.github.io</a></p>
+        </footer>
+    </body>
+</html>
+
+
