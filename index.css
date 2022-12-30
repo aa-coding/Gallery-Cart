@@ -53,7 +53,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    min-height: 50vh;
+    min-height: 75vh;
     margin-bottom: 6rem;
     margin-top: 6rem;
 }
