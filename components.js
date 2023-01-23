@@ -169,6 +169,9 @@ class SearchBar extends HTMLElement {
 
     connectedCallback() {
       
+      //this.wrapper = document.querySelector('.wrapper')
+      this.bodyRect = document.body.getBoundingClientRect()
+      console.log(this.bodyRect.top)
       this.shadowRoot.innerHTML = `
       <style>
         .image-modal {
@@ -213,6 +216,19 @@ class SearchBar extends HTMLElement {
           font-size: 1.5rem;
           cursor: pointer;
           margin: .5rem;
+        }
+
+        @media screen and (max-width: 550px) { 
+          
+          .image-modal {
+            position: absolute;
+            top: ${-(this.bodyRect.top)}px;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .80);
+          }
+        
         }
 
       </style>
